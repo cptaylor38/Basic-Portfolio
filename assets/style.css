@@ -1,0 +1,391 @@
+
+  header
+  {
+      background-color: white;
+      border-bottom: 2px solid darkgrey;
+      height: 90px;
+  }
+
+
+  .container
+  {
+      /*margin: 0 auto;*/
+      /*vertical-align: middle;*/
+  }
+
+  .name
+  {
+      float: left;
+      font-size: 24px;
+      background: cadetblue;
+      font-weight: bold;
+      padding: 32px;
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      /*text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; Commenting this for use elsewhere. Works. */
+  }
+
+  a
+  {
+      color: grey;
+      text-decoration: none;
+  }
+
+  a:visited
+  {
+      color: grey;
+      text-decoration: none;
+  }
+
+  a:hover
+  {
+      color: black;
+      text-decoration: none;
+  }
+
+  .navigator a.active-link
+  {
+      color: cadetblue;
+      text-decoration: none;
+  }
+
+  nav
+  {
+      float: right;
+      font-size: 18px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  header::after
+  {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .navigator
+  {
+    width: 991px;  
+    margin: auto;
+  }
+
+  nav ul
+  {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      
+   }
+
+  nav li
+  {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 30px 10px;
+    
+
+  }
+
+  .middleSection /*Needs to contain content and bio and maybe be lifted to front?*/
+  {
+    box-sizing: content-box;
+    max-width: 930px;
+    height: auto;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    margin: auto;
+    background: #ffffff;
+    margin-top: 25px;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+  }
+
+  #content
+  {
+      font-size: 18px;
+      line-height: 1.5;
+  }
+
+  #selfie
+  {
+      padding: 5px 20px 20px 0;
+  }
+
+  #contentTitle
+  {
+      font-weight: bold;
+      color: cadetblue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  body
+  {
+      margin: 0;
+      background: url(../assets/images/folk-pattern-black.png);
+      height: 1000px;
+      
+      
+  }
+
+
+  footer
+  {
+      background-color: dimgray;
+      border-top: 8px solid #4aaaa5;
+      height: 50px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+  }
+
+  footer::after
+  {
+      content: "";
+      display: table;
+  }
+
+  input[type=submit] {
+    padding:7px 18px; 
+    background: cadetblue; 
+    border:0 none;
+    color: white;
+    
+}
+
+  .portfolio-list
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    height: auto;
+    position: relative;
+    
+}
+
+    
+.portfolio-list img
+{
+    width: 200px;
+    height: 150px;
+    padding: 20px 15px 5px 15px;
+}
+
+/*.portfolio-list span
+{
+    z-index: 1000;
+    display: flex;
+    flex-flow: row wrap;
+    
+}*/
+
+.imgHolder
+{
+    position: relative;
+}
+
+.imgHolder span
+{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    padding: 15px;
+    width: 170px;
+    text-align: center;
+    background-color: cadetblue;
+    opacity: .95;
+    color: white;
+    
+    
+}
+ 
+
+ 
+
+
+
+  /*.outerSection /*Needs to fill whole page and have a border at the bottom? Or a footer similar to header structure.
+  {
+    background: url(../assets/images/folk-pattern-black.png);
+  }*/
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*body
+  {
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 0px;
+      background-image: url(../assets/images/background2.jpg)
+  }
+
+  #navigator
+  {
+      padding: 30px;
+      border-bottom: 2px solid darkgrey;
+      background: white;
+      width: 900px;
+      
+  }
+
+  .topNav
+  {
+      text-align: right;
+      color: darkgrey;
+      background-color: white;
+      
+      
+  }
+
+  #name
+  {
+      background-color: cadetblue;
+      color: white;
+      z-index: 1;
+      font-size: 24px;
+      float: left;
+
+  }
+  
+  
+  
+  #about
+  {
+      text-align: left;
+      width: 100%;
+      font-size: 24px;
+  }
+  
+  
+
+  #about-me
+  {
+      clear: both;
+      font-size: 20px;
+      text-align: left;
+      line-height: 1.5;
+  }
+
+  #me
+  {
+      padding: 10px;
+  }
+
+  #content
+  {
+      clear: both;
+      background-color: white;
+      padding: 20px;
+      
+  }
+
+/*
+
+.topNav
+{
+    background-color: white;
+    overflow: hidden; 
+    width: 960px;
+    margin: auto;
+}
+
+.topNav a
+{
+    float: left;
+    color: darkgrey;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 12px;
+}
+
+.topNav-right a
+{
+    float: right;
+    font-size: 15px;
+    display: table-cell;
+    line-height: 90px;
+    text-align: center;
+    margin: auto;
+}
+
+.topNav a.corbinTaylor
+{
+    font-size:35px;
+    background-color:mediumaquamarine;
+    color:white;
+    line-height:90px;
+   float: left; realized this wasn't necessary
+}
+
+#titleAboutMe
+{
+    color: mediumaquamarine;
+    font-size:45px;
+}
+
+.pageContent
+{
+    display:table;
+    width:960px;
+    height:50%;
+    background-color: white;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.outerTable
+{
+    display:table;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#index
+{
+    /*border-top: white 150px;
+   /* padding: 25px; 
+    margin: auto;
+    background-image: url(../assets/images/background2.jpg), url(../assets/images/folk);
+    background-position: 50px 150px, 50px 150px;
+    background-repeat: no-repeat, no-repeat;
+    
+    /*padding: 15px;
+    
+}
+
+#me
+{
+    border:15px solid white;
+}
+
+#about-me
+{
+    font-size: 32px;
+}
+
+/*
+#aboutme
+{
+    text-align: center;
+}
+*/
